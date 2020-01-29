@@ -1,0 +1,27 @@
+{
+  "name": "node-multithread",
+  "version": "1.0.0",
+  "description": "Simplest way to enable multi-threading in Nodejs. No configuration needed. Just plug and play.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anand-jain-official/node-multithread.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anand-jain-official/node-multithread/issues"
+  },
+  "homepage": "https://github.com/anand-jain-official/node-multithread#readme",
+  "devDependencies": {
+    "@types/node": "^13.5.1",
+    "typescript": "^3.7.5"
+  }
+}
