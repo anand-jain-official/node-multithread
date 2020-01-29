@@ -1,11 +1,10 @@
 import * as os from 'os';
 import * as cluster from 'cluster';
 
-export default (no_of_threads: number, cb: Function) => {
+function nodeMultithread(cb: Function, no_of_threads?: number) {
     if (cluster.isMaster) {
       //Master Process
-      const n_cpus =  no_of_threads ? no_of_threads : os.cpus().length; // os.cpus().length
-      console.log(`Forking ${n_cpus} CPUs`);
+      const n_cpus =  no_of_threads ? no_of_threads : os.cpus().length;
       for(let i=0;i < n_cpus; i++) {
         cluster.fork();
       }
@@ -15,3 +14,5 @@ export default (no_of_threads: number, cb: Function) => {
         cb();
     }
 }
+
+export = nodeMultithread;

@@ -1,2 +1,2 @@
-declare const _default: (no_of_threads: number, cb: Function) => void;
-export default _default;
+declare function nodeMultithread(cb: Function, no_of_threads?: number): void;
+export = nodeMultithread;
