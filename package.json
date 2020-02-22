@@ -1,6 +1,6 @@
 {
   "name": "node-multithread",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simplest way to enable multi-threading in Nodejs. No configuration needed. Just plug and play.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,6 +29,6 @@
   "homepage": "https://github.com/anand-jain-official/node-multithread#readme",
   "devDependencies": {
     "@types/node": "^13.5.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.2"
   }
 }
