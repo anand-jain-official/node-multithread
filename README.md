@@ -18,6 +18,8 @@ Node v8.x and above recommended.
     
     const {multithread, runOnce} = require('node-multithread');
 
+	runOnce(() => console.log("this will print only once"));
+
     multithread(() => {
 
         // Your code goes here
@@ -28,8 +30,6 @@ Node v8.x and above recommended.
 	const app = express();
 	const port = 3000;
 	console.log("This will print as many times as threads");
-
-	runOnce(() => console.log("this will print only once"));
 
 	app.get('/', (req, res) => res.send('Hello World!'))
 
